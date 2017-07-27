@@ -1,0 +1,15 @@
+<h1>Welcome to the amusement park</h1>
+<% if admin? %>
+<h3>ADMIN</h3>
+<% end %>
+<label>Name:</label><br></br>
+<%=@user.name%>
+<label>Tickets:</label><br></br>
+<%=@user.tickets%>
+<label>Mood:</label><br></br>
+<%=@user.mood%>
+<label>Height:</label><br></br>
+<%=@user.height%>
+<input type="text" name="" value="">
+
+<%= link_to 'See attractions', attractions_path%>
