@@ -3,5 +3,8 @@
 <%= @attractions.each do |attraction| %>
     <h3><%=attraction.name%></h3>
     <h3><%=attraction.tickets%></h3>
+    <input type="hidden" name="attraction_id" value="attraction.id">
     <h3><%=link_to "Go on #{attraction.name}", attraction_path(attraction)%></h3>
+
+
 <% end %>

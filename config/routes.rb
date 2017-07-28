@@ -8,5 +8,5 @@ Rails.application.routes.draw do
   get '/attractions', to: 'attractions#index'
   delete '/logout', to: 'sessions#destroy'
   get '/attractions/:id', to: 'attractions#show', as: 'attraction'
-  post '/rides/new', to: 'rides#new'
+  post '/rides', to: 'rides#create'
 end
