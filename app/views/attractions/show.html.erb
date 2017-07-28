@@ -1,1 +1,4 @@
-<%= form_for  %>
+<%= form_tag '/rides/new' do %>
+<%= text_field_tag :name %>
+<%= submit_tag 'Go on this ride' %>
+<% end %>

@@ -1,5 +1,7 @@
-  <%= @attractions.each do |attraction| %>
+<h1>this is my attractions page</h1>
+
+<%= @attractions.each do |attraction| %>
     <h3><%=attraction.name%></h3>
     <h3><%=attraction.tickets%></h3>
     <h3><%=link_to "Go on #{attraction.name}", attraction_path(attraction)%></h3>
-  <% end %>
+<% end %>
