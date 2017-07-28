@@ -2,6 +2,7 @@
 <% if admin? %>
 <h3>ADMIN</h3>
 <% end %>
+<%= flash[:message] %>
 <label>Name:</label><br></br>
 <%=@user.name%>
 <label>Tickets:</label><br></br>

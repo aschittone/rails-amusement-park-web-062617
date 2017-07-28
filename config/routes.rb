@@ -7,6 +7,12 @@ Rails.application.routes.draw do
   root 'application#home'
   get '/attractions', to: 'attractions#index'
   delete '/logout', to: 'sessions#destroy'
+  get '/attractions/new', to: 'attractions#new', as: 'new_attraction'
   get '/attractions/:id', to: 'attractions#show', as: 'attraction'
   post '/rides', to: 'rides#create'
+  post '/attractions', to: 'attractions#create'
+  get '/attractions/:id/edit', to: 'attractions#edit', as: 'edit_attraction'
+  patch '/attractions/:id', to: 'attractions#update'
+
+
 end
